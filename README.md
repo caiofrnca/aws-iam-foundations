@@ -118,8 +118,4 @@ AWS Well-Architected Framework – Security Pillar
 
 AWS Solutions Architect – Associate (SAA-C03)
 
-Status
-
-Phase 1 – Foundations (In Progress)
-
-What You Should Do Now (Very Important)
+Status: Phase 1 – Foundations (In Progress)
