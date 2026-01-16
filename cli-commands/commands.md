@@ -1,4 +1,8 @@
 # TASK 1 - IAM Foundations
+
+> Creating a baseline IAM identity model using group-based access control.  
+> Users are created without access keys, and permissions are attached only to groups, following AWS best practices for least privilege, scalability, and security.
+
 1 - Create Groups:
   ```bash
   aws iam create-group --group-name Admins
@@ -51,6 +55,7 @@ To verify membership:
   aws iam get-group --group-name Developers
   aws iam get-group --group-name ReadOnly
 ```
+
 
 
 
