@@ -1,8 +1,8 @@
 ### Least Privilege - Practical Notes
 
-This document captures how the principle of least privilege is applied throughout this repository, along with areas intentionally left broader during early learning stages.
+This document shows how the principle of least privilege is applied throughout this repository, along with areas intentionally left broader during early learning stages.
 
-The goal is to progressive tightening of access as understanding improves.
+The goal is to progressive tightening access as understanding improves.
 
 #### TASK 1 - Baseline Access Model
 For the initial IAM foundations, AWS-managed policies were used to establish clear access boundaries:
@@ -38,6 +38,7 @@ As this repository evolves, the following improvements are planned:
 Key Takeaway:
   * Least privilege is not a one-time configuration.  
   * It is an iterative process that improves as systems, requirements, and understanding evolve.
+
 
 
 
