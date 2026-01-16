@@ -37,7 +37,18 @@ What Was Built:
   * Identification of overly permissive access
 
 Repository Structure:
-  **PENDING
+aws-iam-foundations/
+├── README.md
+├── docs/
+│ ├── iam-design-decisions.md
+│ └── least-privilege-examples.md
+├── policy-examples/
+│ ├── s3-readonly-custom-policy.json
+│ └── ec2-assume-role-trust-policy.json
+├── cli-commands/
+│ └── commands.md
+└── evidence/
+└── screenshots/
 
 Key Design Decisions:
   * Roles over access keys
