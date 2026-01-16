@@ -48,7 +48,8 @@ aws-iam-foundations/
 │ └── ec2-assume-role-trust-policy.json
 ├── cli-commands/
 │ └── commands.md
-└── evidences/screenshot
+└── evidences/
+  └── screenshots.md
 ```
 Key Design Decisions:
   * Roles over access keys:
