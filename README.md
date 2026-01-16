@@ -1,4 +1,4 @@
-AWS IAM Foundations - TEST
+AWS IAM Foundations
 
 This repository is part of my AWS Solutions Architect Associate (SAA-C03) "Build as I learn" journey:
 
