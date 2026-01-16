@@ -1,17 +1,16 @@
 AWS IAM Foundations
 
-Overview
-This project demonstrates practical and architectural understanding of AWS Identity and Access Management (IAM).
-The goal is to design and implement secure, least-privilege access patterns using users, groups, roles, and policies, aligned with AWS best practices.
-This repository is part of my AWS Solutions Architect – Associate (SAA-C03) learning path and focuses on how AWS expects identity to be designed, not just configured.
+This repository is part of my AWS Solutions Architect Associate (SAA-C03) "Build as I learn" journey:
 
-Objectives
+This repo demonstrates practical and architectural understanding of AWS Identity and Access Management (IAM).The goal is to design and implement secure, least-privilege access patterns using users, groups, roles, and policies, aligned with AWS best practices and focuses on how AWS expects identity to be designed, not just configured.
+
+Objectives:
 * Understand the difference between authentication and authorization
 * Implement least-privilege access using custom IAM policies
 * Use IAM roles instead of long-lived credentials
 * Apply security best practices such as MFA and access analysis
 
-What Was Built
+What Was Built:
 1. IAM Users and Groups
 * Separate users for administrative, developer, and read-only access
 * Group-based permission management
@@ -39,7 +38,7 @@ What Was Built
 Repository Structure:
 **PENDING
 
-Key Design Decisions
+Key Design Decisions:
 * Roles over access keys
 IAM roles eliminate long-lived credentials and reduce blast radius.
 
@@ -52,24 +51,24 @@ Policies are scoped to specific actions and resources.
 * Separation of human and machine identities
 Users represent people; roles represent workloads.
 
-Security Considerations
+Security Considerations:
 * MFA enabled for all privileged users
 * No access keys committed or stored
 * Explicit denial preferred over broad allow policies
 * Continuous review using IAM Access Analyzer
 
-Lessons Learned
+Lessons Learned:
 * Most IAM security issues are design problems, not configuration mistakes
 * IAM roles fundamentally change how cloud security should be approached
 * Simpler policies are safer than overly flexible ones
 
-Next Improvements
+Next Improvements:
 * Permission boundaries for delegated administration
 * SCPs using AWS Organizations
 * Temporary credentials via STS federation
 
-References
-* AWS IAM Documentation
+References:
+* AWS IAM Documentation (https://docs.aws.amazon.com/iam/)
 * AWS Well-Architected Framework – Security Pillar
 * AWS Solutions Architect – Associate (SAA-C03)
 
