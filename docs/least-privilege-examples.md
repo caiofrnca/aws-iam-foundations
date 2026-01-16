@@ -4,7 +4,7 @@ This document captures how the **principle of least privilege** is applied throu
 
 The goal is not perfection from day one, but **progressive tightening of access** as understanding improves.
 
-##### TASK 1 — Baseline Access Model
+#### TASK 1 — Baseline Access Model
 For the initial IAM foundations, AWS-managed policies were used to establish clear access boundaries:
 
 - Admins → `AdministratorAccess`  
@@ -38,5 +38,6 @@ As this repository evolves, the following improvements are planned:
 Key Takeaway
   * Least privilege is not a one-time configuration.  
   * It is an iterative process that improves as systems, requirements, and understanding evolve.
+
 
 
