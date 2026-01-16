@@ -10,13 +10,14 @@ Confirm AWS identity and CLI access:
   ```bash
   aws sts get-caller-identity
   aws iam get-account-summary
+```
 
 1 - Create Groups:
   ```bash
   aws iam create-group --group-name Admins
   aws iam create-group --group-name Developers
   aws iam create-group --group-name ReadOnly
-
+```
 To verify:
   ```bash
   aws iam list-groups
@@ -62,4 +63,5 @@ To verify membership:
   aws iam get-group --group-name Admins
   aws iam get-group --group-name Developers
   aws iam get-group --group-name ReadOnly
+
 
