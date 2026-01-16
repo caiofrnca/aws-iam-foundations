@@ -51,16 +51,20 @@ aws-iam-foundations/
 └── screenshots/
 ```
 Key Design Decisions:
-  * Roles over access keys
+  * Roles over access keys:
+    
   Wherever possible, IAM roles are used instead of long-lived access keys. This reduces credential exposure and limits the blast radius if something is misconfigured or compromised.
   
-  * Group-based access control
+  * Group-based access control:
+    
   Permissions are assigned to groups rather than individual users. This makes access management easier to scale and avoids inconsistent or duplicated permissions as more users are added.
   
-  * Least privilege by default
+  * Least privilege by default:
+    
   Access is intentionally limited to only what is required. Even when using AWS-managed policies during early learning, the goal is to progressively move toward more tightly scoped  permissions.
   
-  * Separation of human and machine identities
+  * Separation of human and machine identities:
+    
   IAM users are used to represent people, while IAM roles are used for workloads and AWS services. This separation keeps access models clear and reduces security risk.
 
 Security Considerations:
