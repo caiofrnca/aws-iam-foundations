@@ -12,6 +12,7 @@ Objectives:
   * Apply security best practices such as MFA and access analysis
 
 What Was Built:
+
   1 - IAM Users and Groups
   * Separate users for administrative, developer, and read-only access
   * Group-based permission management
