@@ -54,3 +54,10 @@ To verify membership:
   aws iam get-group --group-name Admins
   aws iam get-group --group-name Developers
   aws iam get-group --group-name ReadOnly
+
+
+```bash
+  aws iam get-group --group-name Admins
+  aws iam get-group --group-name Developers
+  aws iam get-group --group-name ReadOnly
+
