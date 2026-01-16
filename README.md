@@ -37,6 +37,7 @@ What Was Built:
   * Identification of overly permissive access
 
 Repository Structure:
+```bash
 aws-iam-foundations/
 ├── README.md
 ├── docs/
@@ -49,7 +50,7 @@ aws-iam-foundations/
 │ └── commands.md
 └── evidence/
 └── screenshots/
-
+```
 Key Design Decisions:
   * Roles over access keys
   IAM roles eliminate long-lived credentials and reduce blast radius.
