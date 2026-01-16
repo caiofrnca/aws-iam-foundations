@@ -12,26 +12,26 @@ Objectives:
   * Apply security best practices such as MFA and access analysis
 
 What Was Built:
-  1. IAM Users and Groups
+  1 - IAM Users and Groups
   * Separate users for administrative, developer, and read-only access
   * Group-based permission management
   * Explicit avoidance of user-attached permissions where possible
   
-  2. IAM Policies
+  2 - IAM Policies
   * Custom JSON policy granting read-only access to S3
   * Comparison between AWS-managed and customer-managed policies
   * Policy evaluation logic (Allow, Deny, implicit deny)
   
-  3. IAM Roles
+  3 - IAM Roles
   * IAM role assumed by an EC2 instance to access AWS services
   * Trust policy configuration
   * No use of access keys for AWS services
   
-  4. Multi-Factor Authentication (MFA)
+  4 - Multi-Factor Authentication (MFA)
   * MFA enforced for privileged users
   * Explanation of risk reduction for compromised credentials
   
-  5. IAM Security Tools
+  5 - IAM Security Tools
   * IAM Access Analyzer
   * Credential reports
   * Identification of overly permissive access
