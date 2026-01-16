@@ -14,9 +14,9 @@ Objectives:
 What Was Built:
 
   1 - IAM Users and Groups
-  - Separate users for administrative, developer, and read-only access
-  - Group-based permission management
-  - Explicit avoidance of user-attached permissions where possible
+  * Separate users for administrative, developer, and read-only access
+  * Group-based permission management
+  * Explicit avoidance of user-attached permissions where possible
   
   2 - IAM Policies
   * Custom JSON policy granting read-only access to S3
