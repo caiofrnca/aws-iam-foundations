@@ -66,13 +66,13 @@ Key Design Decisions:
 Security Considerations:
   * MFA enabled for all privileged users
   * No access keys committed or stored
-  * Explicit denial preferred over broad allow policies
+  * Explicit denial over broad allow policies
   * Continuous review using IAM Access Analyzer
 
 Lessons Learned:
-  * Most IAM security issues are design problems, not configuration mistakes
+  * Most IAM security issues are design problems, not configuration mistakes, think before create!
   * IAM roles fundamentally change how cloud security should be approached
-  * Simpler policies are safer than overly flexible ones
+  * Simpler/clear policies are safer than overly flexible ones
 
 Next Improvements:
   * Permission boundaries for delegated administration
