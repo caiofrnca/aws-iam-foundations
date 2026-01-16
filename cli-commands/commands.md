@@ -1,17 +1,4 @@
-# TASK 1 - IAM Foundations — CLI Commands
-
-Obj:
-- Separate users for administrative, developer, and read-only access
-- Group-based permission management
-- Explicit avoidance of user-attached permissions where possible
-
-Prerequisites:
-Confirm AWS identity and CLI access:
-  ```bash
-  aws sts get-caller-identity
-  aws iam get-account-summary
-```
-
+# TASK 1 - IAM Foundations
 1 - Create Groups:
   ```bash
   aws iam create-group --group-name Admins
@@ -64,5 +51,6 @@ To verify membership:
   aws iam get-group --group-name Developers
   aws iam get-group --group-name ReadOnly
 ```
+
 
 
