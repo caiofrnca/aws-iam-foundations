@@ -2,6 +2,7 @@
 
 > * Creating a baseline IAM identity model using group-based access control.  
 > * Users are created without access keys, and permissions are attached only to groups, following AWS best practices for least privilege, scalability, and security.
+> * Observation: The repeatable steps..
 
 1 - Create Groups:
   ```bash
@@ -55,6 +56,7 @@ To verify membership:
   aws iam get-group --group-name Developers
   aws iam get-group --group-name ReadOnly
 ```
+
 
 
 
