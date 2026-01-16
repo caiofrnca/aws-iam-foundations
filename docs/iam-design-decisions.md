@@ -1,4 +1,4 @@
-### TASK 1 — User Authentication & Identity
+### TASK 1 - User Authentication & Identity
 
 First question: Who is the user, and how they authenticate?
  * Before granting any permissions, it was important to define clear identity boundaries and access patterns.
@@ -28,6 +28,7 @@ Do NOT use IAM for:
 
 Exam signal:
 “AWS internal authentication and authorization” → IAM
+
 
 
 
