@@ -29,6 +29,22 @@ Do NOT use IAM for:
 Exam signal:
 “AWS internal authentication and authorization” → IAM
 
+---
+
+### TASK 2 - IAM Policies and Permission Evaluation
+
+To better understand how IAM evaluates permissions, the AWS-managed `ReadOnlyAccess` policy was replaced with a created policy (S3ReadOnlyCustom) limited to Amazon S3 read-only actions.
+
+Using a narrower policy makes allowed actions explicit and helps with troubleshooting and security reviews.
+
+Managed vs customer-managed policies
+* AWS-managed policies are convenient and well maintained, but they are often broader than required. Customer-managed policies provide tighter control and better reflect real-world access models.
+
+Policy evaluation logic
+* IAM evaluates permissions based on explicit allows, explicit denies, and implicit denies.  
+* In this policy, only specific S3 read actions are explicitly allowed; all other actions are implicitly denied.
+
+
 
 
 
