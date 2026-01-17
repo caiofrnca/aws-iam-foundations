@@ -14,10 +14,15 @@ What Was Built:
 
   1 - IAM Users and Groups
   * Separate users for administrative, developer, and read-only access
+    Group	             Policy	                Purpose
+    Admins	- AdministratorAccess	- Full administrative control
+    Developers	PowerUserAccess	Resource management without IAM control
+    ReadOnly	  ReadOnlyAccess	Non-destructive visibility
   * Group-based permission management
   * Explicit avoidance of user-attached permissions where possible
   
   2 - IAM Policies
+  * Replaced AWS-managed ReadOnlyAccess with a custom S3 read-only policy to demonstrate least-privilege access design
   * Custom JSON policy granting read-only access to S3
   * Comparison between AWS-managed and customer-managed policies
   * Policy evaluation logic (Allow, Deny, implicit deny)
@@ -53,10 +58,10 @@ aws-iam-foundations/
 ```
 Key Design Decisions:
   * Roles over access keys:
-      Wherever possible, IAM roles are used instead of long-lived access keys. This reduces credential exposure and limits the blast radius if something is misconfigured or compromised.
+      Wherever possible, IAM Roles are used instead of Access keys. This reduces credential exposure and limits the radius if something is misconfigured or compromised.
   
   * Group-based access control:
-      Permissions are assigned to groups rather than individual users. This makes access management easier to scale and avoids inconsistent or duplicated permissions as more users are added.
+      Permissions are assigned to groups rather than individual users. This makes access management easier to scale and avoids inconsistent/duplicated permissions as more users are added.
   
   * Least privilege by default:
       Access is intentionally limited to only what is required. Even when using AWS-managed policies during early learning, the goal is to progressively move toward more tightly scoped  permissions.
