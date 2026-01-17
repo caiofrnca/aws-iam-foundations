@@ -33,7 +33,7 @@ Exam signal:
 
 ### TASK 2 - IAM Policies and Permission Evaluation
 
-To better understand how IAM evaluates permissions, the AWS-managed `ReadOnlyAccess` policy was replaced with a created policy (S3ReadOnlyCustom) limited to Amazon S3 read-only actions.
+To better understand how IAM evaluates permissions, the AWS-managed `ReadOnlyAccess` policy was replaced with a created policy (`S3ReadOnlyCustom`) limited to Amazon S3 read-only actions.
 
 Using a narrower policy makes allowed actions explicit and helps with troubleshooting and security reviews.
 
@@ -43,6 +43,7 @@ Managed vs customer-managed policies
 Policy evaluation logic
 * IAM evaluates permissions based on explicit allows, explicit denies, and implicit denies.  
 * In this policy, only specific S3 read actions are explicitly allowed; all other actions are implicitly denied.
+
 
 
 
