@@ -1,4 +1,4 @@
-# TASK 1 - IAM Foundations
+## TASK 1 - IAM Foundations
 
 > * Creating a baseline IAM identity model using group-based access control.  
 > * Users are created without access keys, and permissions are attached only to groups, following AWS best practices for least privilege, scalability, and security.
@@ -65,6 +65,7 @@ aws iam create-policy \
   --policy-name S3ReadOnlyCustom \
   --policy-document file://policy-examples/s3-readonly-custom-policy.json
 ```
+
 
 
 
