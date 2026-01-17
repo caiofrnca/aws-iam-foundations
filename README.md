@@ -14,6 +14,7 @@ This repo demonstrates practical and architectural understanding of AWS Identity
 
   1 - IAM Users and Groups
   * Separate users for administrative, developer, and read-only access
+  * Group-based access control used:
 
     | Group      | Policy (AWS managed)    | Purpose                                   |
     |------------|-------------------------|-------------------------------------------|
