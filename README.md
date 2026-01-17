@@ -15,10 +15,11 @@ What Was Built:
   1 - IAM Users and Groups
   * Separate users for administrative, developer, and read-only access
     
-    Group	             Policy	                Purpose
-    Admins	- AdministratorAccess	- Full administrative control
-    Developers	PowerUserAccess	Resource management without IAM control
-    ReadOnly	  ReadOnlyAccess	Non-destructive visibility
+  | Group      | Policy                 | Purpose                                   |
+  |------------|----------------------- |-------------------------------------------|
+  | Admins     | AdministratorAccess    | Full administrative control               |
+  | Developers | PowerUserAccess        | Resource management without IAM control  |
+  | ReadOnly   | ReadOnlyAccess         | Non-destructive visibility               |
     
   * Group-based permission management
   * Explicit avoidance of user-attached permissions where possible
