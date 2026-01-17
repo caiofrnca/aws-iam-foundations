@@ -44,7 +44,6 @@ Policy evaluation logic
 * IAM evaluates permissions based on explicit allows, explicit denies, and implicit denies.  
 * In this policy, only specific S3 read actions are explicitly allowed; all other actions are implicitly denied.
 * Ex:
-  ```bash
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -60,7 +59,8 @@ Policy evaluation logic
     }
   ]
 }
-```
+
+
 
 
 
