@@ -38,11 +38,29 @@ To better understand how IAM evaluates permissions, the AWS-managed `ReadOnlyAcc
 Using a narrower policy makes allowed actions explicit and helps with troubleshooting and security reviews.
 
 Managed vs customer-managed policies
-* AWS-managed policies are convenient and well maintained, but they are often broader than required. Customer-managed policies provide tighter control and better reflect real-world access models.
+* AWS-managed policies simplify policy management but are generally over-permissive. In contrast, customer-managed policies provide tighter, least-privilege access and better match practical access patterns.
 
 Policy evaluation logic
 * IAM evaluates permissions based on explicit allows, explicit denies, and implicit denies.  
 * In this policy, only specific S3 read actions are explicitly allowed; all other actions are implicitly denied.
+* Ex:
+  ```bash
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowListAndReadS3Objects",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListAllMyBuckets",
+        "s3:ListBucket",
+        "s3:GetObject"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```
 
 
 
