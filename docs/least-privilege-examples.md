@@ -39,6 +39,16 @@ Key Takeaway:
   * Least privilege is not a one-time configuration.  
   * It is an iterative process that improves as systems, requirements, and understanding evolve.
 
+---
+
+#### TASK 2 - Enforcing Least Privilege with Custom Policies
+
+The AWS-managed `ReadOnlyAccess` policy previous used was replaced with a custom S3-only read policy. 
+
+This reduces the blast radius of read-only users by allowing only the actions required for visibility while relying on implicit deny for everything else.
+
+Ps. The created policy "AllowListAndReadS3Objects" details can be checked on "policy-examples" folder.
+
 
 
 
