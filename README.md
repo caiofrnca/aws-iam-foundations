@@ -15,7 +15,7 @@ What Was Built:
   1 - IAM Users and Groups
   * Separate users for administrative, developer, and read-only access
     
-  | Group      | Policy                 | Purpose                                   |
+  | Group      | Policy (AWS managed)   | Purpose                                   |
   |------------|----------------------- |-------------------------------------------|
   | Admins     | AdministratorAccess    | Full administrative control               |
   | Developers | PowerUserAccess        | Resource management without IAM control  |
