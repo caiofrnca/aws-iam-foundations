@@ -42,7 +42,7 @@ Managed vs customer-managed policies
 
 Policy evaluation logic
 * IAM evaluates permissions based on explicit allows, explicit denies, and implicit denies.  
-* In this policy, only specific S3 read actions are explicitly allowed; all other actions are implicitly denied.
+* In this policy, only the specific S3 READ(list,get) actions are explicitly ALLOWED; all other actions are implicitly denied.
 * Ex:
 ```json
 {
@@ -61,6 +61,7 @@ Policy evaluation logic
   ]
 }
 ```
+
 
 
 
