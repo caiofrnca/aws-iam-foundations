@@ -62,6 +62,14 @@ Policy evaluation logic
 }
 ```
 
+#### Self check
+
+Why 'ec2:DescribeInstances' is denied?
+* As per created/applied policy does not include any EC2 permissions. Because IAM only allows actions that are explicitly permitted, `ec2:DescribeInstances` is implicitly denied by default.
+
+
+ 
+
 
 
 
