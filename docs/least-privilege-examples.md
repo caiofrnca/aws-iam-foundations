@@ -1,15 +1,15 @@
 ### Least Privilege - Practical Notes
 
-This document shows how the principle of least privilege is applied throughout this repository, along with areas intentionally left broader during early learning stages.
+This document shows how the security principle of Least Privilege is applied throughout this repository, along with areas intentionally left broader during early learning stages.
 
 The goal is to progressive tightening access as understanding improves.
 
 #### TASK 1 - Baseline Access Model
 For the initial IAM foundations, AWS-managed policies were used to establish clear access boundaries:
 
-- Admins → `AdministratorAccess`  
-- Developers → `PowerUserAccess`  
-- ReadOnly → `ReadOnlyAccess`  
+- Admins → `AdministratorAccess` (Full administrative control)  
+- Developers → `PowerUserAccess` (Resource management without IAM control) 
+- ReadOnly → `ReadOnlyAccess` (Non-destructive visibility)  
 
 These policies provide a reliable baseline while learning core IAM concepts such as users, groups, and role separation.
 
@@ -48,6 +48,7 @@ The AWS-managed `ReadOnlyAccess` policy previous used was replaced with a custom
 This reduces the blast radius of read-only users by allowing only the actions required for visibility while relying on implicit deny for everything else.
 
 Ps. The created policy "AllowListAndReadS3Objects" details can be checked on "policy-examples" folder.
+
 
 
 
