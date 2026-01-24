@@ -89,9 +89,22 @@ IAM roles are used for AWS services because they eliminate the need for long-liv
 ##### Trust policy vs permission policy
 The trust policy defines who can assume the role, while the permission policy defines what the role is allowed to do. Both are required for a role to function.
 
+#### Self check
+Is all about securing access!!
+##### Why can an EC2 role access S3 without access keys?
+Because AWS provides temporary credentials to the EC2 instance via STS and the Instance Metadata Service when the role is assumed.
 
+##### What happens if the trust policy is missing?
+Without a valid trust policy, EC2 cannot assume the role, so no credentials are issued and all AWS API calls fail.
+
+##### Why is the trust policy separate from permissions?
+The trust policy defines who can assume the role, while the permission policy defines what actions are allowed after the role is assumed.
+
+##### Why is this more secure than embedding credentials?
+IAM roles avoid long-lived access keys by using temporary, automatically rotated credentials, reducing the risk of credential leakage.
 
  
+
 
 
 
