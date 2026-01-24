@@ -2,7 +2,15 @@
 
 This repository is part of my AWS Solutions Architect Associate (SAA-C03) "Build as I learn" journey:
 
-This repo demonstrates practical and architectural understanding of AWS Identity and Access Management (IAM).The goal is to design and implement secure, least-privilege access patterns using users, groups, roles, and policies, aligned with AWS best practices and focuses on how AWS expects identity to be designed, not just configured.
+This repo demonstrates practical and architectural understanding of AWS Identity and Access Management (IAM).The goal is to design and implement secure, least-privilege access patterns using users, groups, roles, and policies, aligned with AWS best practices and focuses on how AWS expects identity to be designed, not just configured. 
+
+All tasks were implemented using the AWS CLI rather than the AWS Console, to strengthen automation skills and reinforce an infras-as-code mindset.
+
+- CLI commands for each task (Tasks 1–5) are documented in the `cli-commands/` directory  
+- Design decisions, explanations, and security considerations are documented in `docs/`  
+- Supporting evidence and validation artifacts are stored in `evidence/`  
+
+This repository reflects a structured, incremental approach to learning AWS by building, validating, and documenting each step.
 
 #### Who is the user, what they need, and how they authenticate?
 
