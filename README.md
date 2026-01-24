@@ -56,9 +56,10 @@ aws-iam-foundations/
 │ └── least-privilege-examples.md
 ├── policy-examples/
 │ ├── s3-readonly-custom-policy.json
+| ├── ec2-s3-readonly-policy.json
 │ └── ec2-assume-role-trust-policy.json
 ├── cli-commands/
-│ └── commands.md
+│ └── tasks_commands.md
 └── evidences/
   └── screenshots.md
 ```
