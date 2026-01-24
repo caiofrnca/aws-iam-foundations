@@ -16,17 +16,11 @@ To verify:
 ```
 2 - Attach AWS-managed(pre-built) policies to groups:
   ```bash
-  aws iam attach-group-policy \
-    --group-name Admins \
-    --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
+  aws iam attach-group-policy --group-name Admins --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
   
-  aws iam attach-group-policy \
-    --group-name Developers \
-    --policy-arn arn:aws:iam::aws:policy/PowerUserAccess
+  aws iam attach-group-policy --group-name Developers --policy-arn arn:aws:iam::aws:policy/PowerUserAccess
   
-  aws iam attach-group-policy \
-    --group-name ReadOnly \
-    --policy-arn arn:aws:iam::aws:policy/ReadOnlyAccess
+  aws iam attach-group-policy --group-name ReadOnly --policy-arn arn:aws:iam::aws:policy/ReadOnlyAccess
 ```
 To verify attached policies:
   ```bash
@@ -56,17 +50,6 @@ To verify membership:
   aws iam get-group --group-name Developers
   aws iam get-group --group-name ReadOnly
 ```
----
-# TASK 2 — Custom IAM Policy (S3 Read-Only)
-
-1 - Create customer-managed policy
-```bash
-aws iam create-policy \
-  --policy-name S3ReadOnlyCustom \
-  --policy-document file://policy-examples/s3-readonly-custom-policy.json
-```
-
-
 
 
 
