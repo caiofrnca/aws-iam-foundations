@@ -34,9 +34,9 @@ This repo demonstrates practical and architectural understanding of AWS Identity
   * Policy evaluation logic (Allow, Deny, implicit deny)
   
 ##### 3 - IAM Roles
+  * Implemented an IAM role for EC2 to access S3 using temporary credentials instead of access keys
   * IAM role assumed by an EC2 instance to access AWS services
   * Trust policy configuration
-  * No use of access keys for AWS services
   
 ##### 4 - Multi-Factor Authentication (MFA)
   * MFA enforced for privileged users
