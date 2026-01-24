@@ -13,8 +13,3 @@
     }
   ]
 }
-
-Policy intent: read-only visibility into Amazon S3
-
-Allows users to list S3 buckets and read objects only.  
-All write and administrative actions are implicitly denied.
