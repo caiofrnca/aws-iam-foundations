@@ -72,9 +72,27 @@ Sid stands for Statement ID, and is a human-readable identifier inside the polic
 ##### Why this policy is safer than ReadOnlyAccess
 AWS policies usually helps in general situations, and often allow access to many services, but this custom policy significantly narrows the blast-radius of access, granting access to S3 only.
 
+---
+
+### TASK 3 - IAM Roles for AWS Services
+
+Objective: Allow an EC2 instance to access Amazon S3 using an IAM role, without using access keys, and understand why roles are the correct mechanism for workloads.
+
+IAM roles are used for AWS services because they eliminate the need for long-lived credentials. Instead of storing access keys on an instance, AWS issues temporary credentials that are automatically rotated.
+
+##### Why roles are preferred over access keys
+* No credentials stored on disk
+* Automatic credential rotation
+* Reduced blast radius
+* Clear separation between human and machine identities
+
+##### Trust policy vs permission policy
+The trust policy defines who can assume the role, while the permission policy defines what the role is allowed to do. Both are required for a role to function.
+
 
 
  
+
 
 
 
