@@ -39,10 +39,11 @@ This repo demonstrates practical and architectural understanding of AWS Identity
   * Trust policy configuration
   
 ##### 4 - Multi-Factor Authentication (MFA)
-  * MFA enforced for privileged users
+  * Enforced multi-factor authentication (MFA) for privileged IAM users. Reduce credential compromise risk
   * Explanation of risk reduction for compromised credentials
   
 ##### 5 - IAM Security Tools
+  * Used IAM security tools to identify overly permissive access and improve IAM visibility
   * IAM Access Analyzer
   * Credential reports
   * Identification of overly permissive access

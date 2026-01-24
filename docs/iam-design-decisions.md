@@ -103,11 +103,33 @@ The trust policy defines who can assume the role, while the permission policy de
 ##### Why is this more secure than embedding credentials?
 IAM roles avoid long-lived access keys by using temporary, automatically rotated credentials, reducing the risk of credential leakage.
 
- 
+ ---
 
+### TASK 4 - Multi-Factor Authentication (MFA)
 
+##### Objective:
+Enforce MFA for privileged IAM users and reduce the risk of account compromise caused by leaked or reused credentials.
 
+Privileged roles have the highest blast radius, so stronger authentication controls are applied there first! MFA would typically be enforced for all human users or replaced entirely with centralized identity via AWS SSO.
 
+ ---
+
+### TASK 5 - IAM Security Tools
+
+##### Objective
+Use AWS IAM security tools to identify overly permissive access, unused credentials, and potential misconfigurations.
+
+How do I know my IAM setup is safe over time?? This is about visibility and governance
+
+  * IAM Access Analyzer
+  * Credential reports
+  * Identification of overly permissive access
+
+IAM Access Analyzer helps identify resources that can be accessed from outside your account, such as overly permissive policies.
+
+* IAM Access Analyzer was used to verify that no unintended external access exists within the account.  
+* At the time of review, no active findings were reported. (screen on evidence folder)
+* Credential reports were used to review MFA status, password usage, and the presence of long-lived access keys across IAM users.
 
 
 
