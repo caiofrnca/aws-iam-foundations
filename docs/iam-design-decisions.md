@@ -63,12 +63,19 @@ Policy evaluation logic
 ```
 
 #### Self check
+##### Why 'ec2:DescribeInstances' is denied?
+As per created/applied policy does not include any EC2 permissions. Because IAM only allows actions that are explicitly permitted, `ec2:DescribeInstances` is implicitly denied by default.
+##### Why no explicit 'Deny' is required?
+They use a "default-deny" approach, also called whitelisting, which denies all access that is not explicity allowed by the policy.
+##### Why Sid is not the policy name?
+Sid stands for Statement ID, and is a human-readable identifier inside the policy document.
+##### Why this policy is safer than ReadOnlyAccess
+AWS policies usually helps in general situations, and often allow access to many services, but this custom policy significantly narrows the blast-radius of access, granting access to S3 only.
 
-Why 'ec2:DescribeInstances' is denied?
-* As per created/applied policy does not include any EC2 permissions. Because IAM only allows actions that are explicitly permitted, `ec2:DescribeInstances` is implicitly denied by default.
 
 
  
+
 
 
 
