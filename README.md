@@ -4,7 +4,7 @@ This repository is part of my AWS Solutions Architect Associate (SAA-C03) "Build
 
 This repo demonstrates practical and architectural understanding of AWS Identity and Access Management (IAM).The goal is to design and implement secure, least-privilege access patterns using users, groups, roles, and policies, aligned with AWS best practices and focuses on how AWS expects identity to be designed, not just configured.
 
-##### Who is the user, what they need, and how they authenticate?
+#### Who is the user, what they need, and how they authenticate?
 
 #### Objectives:
   * Understand the difference between authentication and authorization
@@ -99,4 +99,4 @@ aws-iam-foundations/
   * AWS Solutions Architect – Associate (SAA-C03)
 
 #### Status
-* Phase 1 – Foundations (In Progress)
+* Phase 1 – Foundations (Complete)
